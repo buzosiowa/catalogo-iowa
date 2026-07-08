@@ -1,140 +1,779 @@
+/* ===========================
+        IOWA STREETWEAR
+=========================== */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#ffffff;
-    color:#111;
-    line-height:1.6;
+background:#ffffff;
+color:#111;
 }
+
+img{
+max-width:100%;
+display:block;
+}
+
+.contenedor{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+/* HEADER */
 
 header{
-    background:#000;
-    color:#fff;
-    text-align:center;
-    padding:40px 20px;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
 }
 
-header h1{
-    font-size:48px;
-    letter-spacing:8px;
+header .contenedor{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
 }
 
-header p{
-    margin-top:10px;
-    color:#d9d9d9;
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
 }
 
-section{
-    width:90%;
-    max-width:1200px;
-    margin:70px auto;
+.logo img{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
 }
 
-h2{
-    text-align:center;
-    margin-bottom:35px;
-    font-size:34px;
+.logo h1{
+
+font-size:34px;
+
+letter-spacing:5px;
+
+font-weight:800;
+
+}
+
+.logo p{
+
+font-size:14px;
+
+color:#777;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#0A4DFF;
+
+}
+
+/* HERO */
+
+.hero{
+
+padding:180px 8% 120px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:70px;
+
+flex-wrap:wrap;
+
+background:linear-gradient(to right,#ffffff,#f5f5f5);
+
+}
+
+.hero-texto{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.hero-texto h2{
+
+font-size:20px;
+
+letter-spacing:4px;
+
+color:#555;
+
+margin-bottom:10px;
+
+}
+
+.hero-texto h1{
+
+font-size:70px;
+
+font-weight:800;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+}
+
+.hero-texto p{
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+.hero-imagen{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-imagen img{
+
+width:420px;
+
+border-radius:25px;
+
+box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.botones{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn-negro{
+
+background:#111;
+
+color:#fff;
+
+padding:16px 35px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-negro:hover{
+
+background:#000;
+
+transform:translateY(-4px);
+
+}
+
+.btn-azul{
+
+background:#0A4DFF;
+
+color:white;
+
+padding:16px 35px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-azul:hover{
+
+transform:translateY(-4px);
+
+}
+/* ===========================
+        INFORMACIÓN
+=========================== */
+
+.info{
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+}
+
+.info div{
+
+padding:35px;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.info div:hover{
+
+transform:translateY(-8px);
+
+background:#1d1d1d;
+
+}
+
+.info h3{
+
+margin-bottom:15px;
+
+font-size:22px;
+
+}
+
+/* ===========================
+        CATÁLOGO
+=========================== */
+
+#catalogo{
+
+padding:100px 8%;
+
+background:#fff;
+
+}
+
+.titulo{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.titulo h2{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+.titulo p{
+
+color:#666;
+
+font-size:18px;
+
 }
 
 .galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
 }
 
-.card{
-    border:1px solid #ddd;
-    border-radius:12px;
-    overflow:hidden;
-    background:#fff;
-    transition:.3s;
+.producto{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+cursor:pointer;
+
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+.producto:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+
 }
 
-.card img{
-    width:100%;
-    display:block;
+.producto img{
+
+width:100%;
+
+height:380px;
+
+object-fit:cover;
+
 }
 
-.card h3{
-    padding:18px;
-    font-size:22px;
+/* ===========================
+    PERSONALIZACIÓN
+=========================== */
+
+.personalizar{
+
+padding:100px 8%;
+
+background:#f7f7f7;
+
 }
 
-.card p{
-    padding:0 18px 18px;
-    color:#555;
+.personalizar h2{
+
+font-size:45px;
+
+text-align:center;
+
+margin-bottom:20px;
+
 }
 
-.boton{
-    display:inline-block;
-    margin:15px 18px 25px;
-    background:#000;
-    color:#fff;
-    text-decoration:none;
-    padding:12px 26px;
-    border-radius:8px;
-    transition:.3s;
+.personalizar>div>p{
+
+text-align:center;
+
+max-width:900px;
+
+margin:auto;
+
+color:#666;
+
+margin-bottom:50px;
+
 }
 
-.boton:hover{
-    background:#333;
+.opciones{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
 }
 
-.personalizacion{
-    background:#f5f5f5;
-    border-radius:15px;
-    padding:45px;
-    text-align:center;
+.opcion{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+transition:.3s;
+
 }
 
-.personalizacion h2{
-    margin-bottom:20px;
+.opcion:hover{
+
+transform:translateY(-8px);
+
 }
 
-.personalizacion p{
-    max-width:900px;
-    margin:auto;
-    margin-bottom:15px;
+.opcion h3{
+
+margin-bottom:15px;
+
 }
+
+.adicional{
+
+margin-top:45px;
+
+background:#111;
+
+color:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+}
+/*==========================
+        TALLAS
+==========================*/
+
+.tallas{
+
+padding:100px 8%;
+
+text-align:center;
+
+background:white;
+
+}
+
+.tallas h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.tallas p{
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:40px;
+
+}
+
+.tallas-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.tallas-grid div{
+
+width:120px;
+
+height:120px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#111;
+
+color:white;
+
+font-size:35px;
+
+font-weight:700;
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.tallas-grid div:hover{
+
+background:#0A4DFF;
+
+transform:translateY(-8px);
+
+}
+
+/*==========================
+        CUIDADOS
+==========================*/
+
+.cuidados{
+
+padding:100px 8%;
+
+background:#f5f5f5;
+
+text-align:center;
+
+}
+
+.cuidados h2{
+
+font-size:45px;
+
+margin-bottom:40px;
+
+}
+
+.cuidados img{
+
+max-width:700px;
+
+width:100%;
+
+margin:auto;
+
+border-radius:20px;
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+/*==========================
+        CONTACTO
+==========================*/
+
+.contacto{
+
+padding:100px 8%;
+
+text-align:center;
+
+}
+
+.contacto h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.contacto p{
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+.btn-whatsapp{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#25D366;
+
+color:white;
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:600;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.btn-whatsapp:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*==========================
+        FOOTER
+==========================*/
 
 footer{
-    background:#000;
-    color:#fff;
-    text-align:center;
-    padding:40px 20px;
-    margin-top:70px;
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:70px 20px;
+
 }
 
-footer a{
-    color:#fff;
-    text-decoration:none;
+.logo-footer{
+
+width:90px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+border-radius:50%;
+
 }
 
-footer a:hover{
-    text-decoration:underline;
+footer h2{
+
+font-size:40px;
+
+letter-spacing:5px;
+
+margin-bottom:15px;
+
 }
 
-@media(max-width:768px){
+footer p{
 
-header h1{
-font-size:34px;
+margin:10px 0;
+
+color:#ccc;
+
 }
 
-h2{
-font-size:28px;
+/*==========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+header .contenedor{
+
+flex-direction:column;
+
+gap:20px;
+
 }
 
-.personalizacion{
-padding:25px;
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding-top:170px;
+
+text-align:center;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.hero-texto h1{
+
+font-size:48px;
+
+}
+
+.hero-imagen img{
+
+width:320px;
+
+}
+
+.galeria{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.producto img{
+
+height:220px;
+
+}
+
+.info{
+
+grid-template-columns:1fr;
+
+}
+
+.opciones{
+
+grid-template-columns:1fr;
+
 }
 
 }
