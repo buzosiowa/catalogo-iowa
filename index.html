@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OIWA Streetwear</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:70px;
+letter-spacing:12px;
+}
+
+header p{
+margin-top:20px;
+font-size:20px;
+color:#ddd;
+}
+
+.btn{
+margin-top:35px;
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 10%;
+}
+
+h2{
+font-size:40px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#181818;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+}
+
+.card p{
+padding:0 20px 20px;
+color:#ccc;
+}
+
+.whatsapp{
+
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+text-decoration:none;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+footer{
+padding:60px;
+text-align:center;
+background:#000;
+color:#777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div>
+
+<h1>OIWA</h1>
+
+<p>Streetwear Colombiano</p>
+
+<a class="btn" href="#catalogo">Ver Colección</a>
+
+</div>
+
+</header>
+
+<section id="catalogo">
+
+<h2>Nueva Colección</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=80">
+
+<h3>Oversize Black</h3>
+
+<p>Diseño exclusivo OIWA.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80">
+
+<h3>Urban Grey</h3>
+
+<p>Streetwear Premium.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80">
+
+<h3>Classic White</h3>
+
+<p>Comodidad y estilo.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>¿Por qué OIWA?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Calidad Premium</h3>
+
+<p>Materiales resistentes y cómodos.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Diseños Únicos</h3>
+
+<p>Creamos prendas con identidad.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Envíos Nacionales</h3>
+
+<p>Llevamos OIWA a toda Colombia.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 OIWA - Streetwear Colombiano</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/573004777122">
+
+💬
+
+</a>
+
+</body>
+
+</html>
