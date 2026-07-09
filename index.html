@@ -7,9 +7,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>IOWA | Streetwear Premium</title>
+<title>IOWA | Streetwear Colombiano</title>
 
-<meta name="description" content="Buzos premium personalizados IOWA. Diseños exclusivos, algodón perchado, envíos a toda Colombia.">
+<meta name="description" content="IOWA - Buzos premium personalizados en Colombia">
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,17 +19,19 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<div class="container">
+<div class="header">
 
-<a href="#" class="logo">
+<div class="logo">
 
 <img src="LOGO.jpeg" alt="IOWA">
 
@@ -37,17 +39,18 @@
 
 <h1>IOWA</h1>
 
-<span>Streetwear Colombiano</span>
+<p>Streetwear Colombiano</p>
 
 </div>
 
-</a>
+</div>
+
 
 <nav>
 
 <a href="#inicio">Inicio</a>
 
-<a href="#colores">Colores</a>
+<a href="#coleccion">Colección</a>
 
 <a href="#personaliza">Personaliza</a>
 
@@ -57,87 +60,111 @@
 
 </nav>
 
-<div class="carrito-btn" id="abrirCarrito">
 
-<i class="fa-solid fa-cart-shopping"></i>
+<div class="carrito-boton" onclick="abrirCarrito()">
 
-<span id="cantidadCarrito">0</span>
+<i class="fa-solid fa-bag-shopping"></i>
+
+<span id="contador">0</span>
 
 </div>
+
 
 </div>
 
 </header>
 
-<section class="hero" id="inicio">
 
-<div class="hero-texto">
 
-<h4>STREETWEAR PREMIUM</h4>
 
-<h1>
+<section class="inicio" id="inicio">
 
-Buzos Premium<br>
 
-Hechos en Colombia 🇨🇴
+<div class="inicio-texto">
 
-</h1>
+
+<h3>STREETWEAR PREMIUM</h3>
+
+
+<h2>
+
+Buzos diseñados
+
+<br>
+
+para destacar
+
+</h2>
+
 
 <p>
 
-Fabricamos buzos oversize en algodón perchado de excelente calidad.
+Buzos oversize fabricados en algodón perchado premium.
 
-Escoge uno de nuestros colores disponibles o personalízalo completamente.
+Elige tu color favorito o personaliza tu propio diseño IOWA.
 
 </p>
 
-<div class="hero-botones">
 
-<a href="#colores" class="btn-negro">
+<div class="botones">
 
-Ver Colores
+
+<a href="#coleccion" class="btn-principal">
+
+Ver colección
 
 </a>
 
-<a href="https://wa.me/573004777122"
 
-target="_blank"
-
-class="btn-whatsapp">
+<a href="https://wa.me/573004777122" target="_blank" class="btn-whatsapp">
 
 WhatsApp
 
 </a>
 
-</div>
 
 </div>
 
-<div class="hero-img">
+
+</div>
+
+
+
+<div class="inicio-imagen">
+
 
 <img src="7.png" alt="Buzo IOWA">
 
+
 </div>
+
+
 
 </section>
 
-<section class="beneficios">
 
-<div class="beneficio">
+
+
+<section class="caracteristicas">
+
+
+<div>
 
 <i class="fa-solid fa-shirt"></i>
 
-<h3>Algodón Premium</h3>
+<h3>Algodón perchado</h3>
 
 <p>
 
-Suavidad, comodidad y excelente calidad.
+Comodidad y calidad premium.
 
 </p>
 
 </div>
 
-<div class="beneficio">
+
+
+<div>
 
 <i class="fa-solid fa-palette"></i>
 
@@ -145,362 +172,774 @@ Suavidad, comodidad y excelente calidad.
 
 <p>
 
-Diseños personalizados desde $7.000 adicionales.
+Tu diseño por +$7.000.
 
 </p>
 
 </div>
 
-<div class="beneficio">
 
-<i class="fa-solid fa-truck-fast"></i>
 
-<h3>Envíos</h3>
+<div>
+
+<i class="fa-solid fa-truck"></i>
+
+<h3>Envíos nacionales</h3>
 
 <p>
 
-Realizamos envíos a toda Colombia.
+Enviamos a toda Colombia.
 
 </p>
 
 </div>
 
-<div class="beneficio">
 
-<i class="fa-solid fa-award"></i>
-
-<h3>Calidad IOWA</h3>
-
-<p>
-
-Prendas hechas para durar.
-
-</p>
-
-</div>
 
 </section>
 
-<section id="colores" class="catalogo">
 
-<div class="titulo">
 
-<h2>Colores Disponibles</h2>
+
+<section id="coleccion" class="coleccion">
+
+
+<div class="titulo-seccion">
+
+
+<h2>
+
+Colores disponibles
+
+</h2>
+
 
 <p>
 
-Estos son algunos de nuestros colores disponibles.
-
-Todos pueden personalizarse con el diseño que desees.
+Escoge tu diseño favorito y agrega tu buzo al carrito.
 
 </p>
 
+
 </div>
+
 
 <div class="productos">
-   <div class="producto">
-<img src="7.png" alt="Buzo Negro">
-<h3>Buzo Negro</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo Negro',79900,'7.png')">
-Agregar al carrito
-</button>
+   <div class="producto"
+data-img1="7.png"
+data-img2="8.png">
+
+
+<div class="imagen-producto">
+
+<img src="7.png" alt="Buzo IOWA 01" class="principal">
+
+<img src="8.png" alt="Buzo IOWA 01 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="8.png" alt="Buzo Blanco">
-<h3>Buzo Blanco</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo Blanco',79900,'8.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 01</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 01','7.png','8.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="9.png" alt="Buzo Gris">
-<h3>Buzo Gris</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo Gris',79900,'9.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="9.png"
+data-img2="10.png">
+
+
+<div class="imagen-producto">
+
+<img src="9.png" alt="Buzo IOWA 02" class="principal">
+
+<img src="10.png" alt="Buzo IOWA 02 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="10.png" alt="Buzo Beige">
-<h3>Buzo Beige</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo Beige',79900,'10.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 02</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 02','9.png','10.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="16.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'16.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="16.png"
+data-img2="17.png">
+
+
+<div class="imagen-producto">
+
+<img src="16.png" alt="Buzo IOWA 03" class="principal">
+
+<img src="17.png" alt="Buzo IOWA 03 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="17.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'17.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 03</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 03','16.png','17.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="19.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'19.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="19.png"
+data-img2="21.png">
+
+
+<div class="imagen-producto">
+
+<img src="19.png" alt="Buzo IOWA 04" class="principal">
+
+<img src="21.png" alt="Buzo IOWA 04 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="21.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'21.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 04</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 04','19.png','21.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="22.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'22.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="22.png"
+data-img2="23.png">
+
+
+<div class="imagen-producto">
+
+<img src="22.png" alt="Buzo IOWA 05" class="principal">
+
+<img src="23.png" alt="Buzo IOWA 05 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="23.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'23.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 05</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 05','22.png','23.png')">
+
+Ver producto
+
 </button>
+
+
+</div>
+<div class="producto"
+data-img1="24.png"
+data-img2="25.png">
+
+
+<div class="imagen-producto">
+
+<img src="24.png" alt="Buzo IOWA 06" class="principal">
+
+<img src="25.png" alt="Buzo IOWA 06 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="24.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'24.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 06</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 06','24.png','25.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="25.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'25.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="26.png"
+data-img2="27.png">
+
+
+<div class="imagen-producto">
+
+<img src="26.png" alt="Buzo IOWA 07" class="principal">
+
+<img src="27.png" alt="Buzo IOWA 07 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="26.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'26.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 07</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 07','26.png','27.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="27.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'27.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="28.png"
+data-img2="29.png">
+
+
+<div class="imagen-producto">
+
+<img src="28.png" alt="Buzo IOWA 08" class="principal">
+
+<img src="29.png" alt="Buzo IOWA 08 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="28.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'28.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 08</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 08','28.png','29.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="29.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'29.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="30.png"
+data-img2="31.png">
+
+
+<div class="imagen-producto">
+
+<img src="30.png" alt="Buzo IOWA 09" class="principal">
+
+<img src="31.png" alt="Buzo IOWA 09 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="30.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'30.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 09</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 09','30.png','31.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="31.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'31.png')">
-Agregar al carrito
-</button>
+
+
+
+<div class="producto"
+data-img1="32.png"
+data-img2="33.png">
+
+
+<div class="imagen-producto">
+
+<img src="32.png" alt="Buzo IOWA 10" class="principal">
+
+<img src="33.png" alt="Buzo IOWA 10 segunda vista" class="segunda">
+
 </div>
 
-<div class="producto">
-<img src="32.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'32.png')">
-Agregar al carrito
+
+<h3>Buzo IOWA 10</h3>
+
+<p class="tallas">
+
+Tallas disponibles: S / M / L
+
+</p>
+
+<p class="precio">
+
+Desde $54.999
+
+</p>
+
+
+<button onclick="abrirProducto('Buzo IOWA 10','32.png','33.png')">
+
+Ver producto
+
 </button>
+
+
 </div>
 
-<div class="producto">
-<img src="33.png" alt="Buzo IOWA">
-<h3>Buzo IOWA</h3>
-<p class="precio">$79.900</p>
-<button class="agregar"
-onclick="agregarCarrito('Buzo IOWA',79900,'33.png')">
-Agregar al carrito
-</button>
-</div>
 
 </div>
 
 </section>
 
+
+
+
+<section class="precios">
+
+<h2>Precios por cantidad</h2>
+
+
+<div class="tabla-precios">
+
+
+<div>
+
+<h3>1 a 5 unidades</h3>
+
+<p>$69.999 c/u</p>
+
+</div>
+
+
+<div>
+
+<h3>Desde 6 unidades</h3>
+
+<p>$59.999 c/u</p>
+
+</div>
+
+
+<div>
+
+<h3>Desde 12 unidades</h3>
+
+<p>$54.999 c/u</p>
+
+</div>
+
+
+</div>
+
+</section>
 <section id="personaliza" class="personaliza">
 
-<div class="container">
 
-<h2>Personaliza tu Buzo</h2>
+<div class="titulo-seccion">
 
-<p>
+<h2>
 
-Puedes escoger cualquiera de nuestros colores y agregar el diseño que quieras.
+Personaliza tu IOWA
 
-Logos, fotografías, animes, frases o cualquier idea.
+</h2>
 
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Diseño Personalizado</h3>
-<p>+$7.000 por estampado personalizado.</p>
-</div>
-
-<div class="card">
-<h3>Buzos Lisos</h3>
-<p>También fabricamos buzos completamente lisos.</p>
-</div>
-
-<div class="card">
-<h3>Calidad Premium</h3>
-<p>Algodón perchado de excelente calidad.</p>
-</div>
-
-</div>
-<section id="tallas" class="tallas">
-
-<div class="container">
-
-<h2>Guía de Tallas</h2>
 
 <p>
 
-Trabajamos únicamente en tallas <strong>S, M y L.</strong>
+Crea un buzo único con tu propio diseño.
 
-Consulta la guía antes de realizar tu pedido.
+Envíanos tu idea y nosotros la hacemos realidad.
 
 </p>
 
-<img src="TABLA-TALLAS.jpeg" alt="Tabla de tallas IOWA" class="tabla-tallas">
+</div>
+
+
+
+<div class="personaliza-grid">
+
+
+<div class="personaliza-card">
+
+
+<h3>
+
+Tu diseño
+
+</h3>
+
+
+<p>
+
+Logo, frase, imagen, fotografía o cualquier idea que tengas.
+
+</p>
+
 
 </div>
+
+
+
+<div class="personaliza-card">
+
+
+<h3>
+
+Valor adicional
+
+</h3>
+
+
+<p>
+
+Personalización +$7.000 por unidad.
+
+</p>
+
+
+</div>
+
+
+
+<div class="personaliza-card">
+
+
+<h3>
+
+Buzos lisos
+
+</h3>
+
+
+<p>
+
+También fabricamos buzos sin estampado.
+
+</p>
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
+
+<section id="tallas" class="tallas">
+
+
+<div class="titulo-seccion">
+
+
+<h2>
+
+Guía de tallas
+
+</h2>
+
+
+<p>
+
+Trabajamos únicamente tallas:
+
+<strong>S, M y L</strong>
+
+</p>
+
+
+</div>
+
+
+
+<div class="tallas-box">
+
+
+<div>
+
+<h3>S</h3>
+
+<p>
+
+Talla disponible
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>M</h3>
+
+<p>
+
+Talla disponible
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>L</h3>
+
+<p>
+
+Talla disponible
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<img src="TABLA-TALLAS.jpeg" alt="Medidas de tallas IOWA" class="imagen-tallas">
+
+
+</section>
+
+
+
+
 
 <section class="cuidados">
 
-<div class="container">
 
-<h2>Cuidados de la Prenda</h2>
+<div class="titulo-seccion">
 
-<img src="CUIDADO DE LA PRENDA.jpeg" alt="Cuidados del buzo" class="imagen-cuidados">
+
+<h2>
+
+Cuidados de la prenda
+
+</h2>
+
 
 </div>
 
+
+
+<img src="CUIDADO DE LA PRENDA.jpeg" alt="Cuidados del buzo IOWA" class="imagen-cuidados">
+
+
 </section>
+
+
+
+
 
 <section id="contacto" class="contacto">
 
-<div class="container">
 
-<h2>¿Listo para pedir tu IOWA?</h2>
+<div>
+
+
+<h2>
+
+¿Listo para pedir tu IOWA?
+
+</h2>
+
 
 <p>
 
-Haz tu pedido directamente por WhatsApp.
-
-También podemos asesorarte para escoger talla, color y diseño.
+Escríbenos por WhatsApp y recibe asesoría personalizada.
 
 </p>
 
-<a href="https://wa.me/573004777122" target="_blank" class="btn-contacto">
 
-<i class="fa-brands fa-whatsapp"></i>
 
-Hablar por WhatsApp
+<a href="https://wa.me/573004777122" target="_blank">
+
+WhatsApp +57 300 477 7122
 
 </a>
 
+
 </div>
+
 
 </section>
 
+
+
+
+
 <footer>
 
-<div class="container">
 
-<img src="LOGO.jpeg" class="logo-footer" alt="IOWA">
+<div class="footer-contenido">
 
-<h2>IOWA</h2>
 
-<p>Streetwear Colombiano</p>
+<img src="LOGO.jpeg" alt="Logo IOWA">
+
+
+<h2>
+
+IOWA
+
+</h2>
+
+
+<p>
+
+Streetwear Colombiano
+
+</p>
+
 
 <p>
 
@@ -508,13 +947,6 @@ Diseños exclusivos • Personalización • Calidad Premium
 
 </p>
 
-<p>
-
-WhatsApp
-
-+57 300 477 7122
-
-</p>
 
 <p>
 
@@ -522,93 +954,155 @@ WhatsApp
 
 </p>
 
+
 </div>
+
 
 </footer>
 
 
 
-<!-- BOTÓN FLOTANTE -->
 
-<a href="https://wa.me/573004777122"
 
-target="_blank"
+<!-- VENTANA DEL PRODUCTO -->
 
-class="whatsapp-float">
 
-<i class="fa-brands fa-whatsapp"></i>
+<div id="modalProducto" class="modal">
 
-</a>
+
+<div class="modal-contenido">
+
+
+<span onclick="cerrarProducto()" class="cerrar">
+
+×
+</span>
+
+
+
+<div class="modal-imagenes">
+
+
+<img id="modalImg1">
+
+
+<img id="modalImg2">
+
+
+</div>
+
+
+
+<h2 id="modalNombre">
+
+</h2>
+
+
+
+<p>
+
+Selecciona tu talla:
+
+</p>
+
+
+<div class="seleccion-tallas">
+
+
+<button onclick="seleccionarTalla('S')">
+S
+</button>
+
+
+<button onclick="seleccionarTalla('M')">
+M
+</button>
+
+
+<button onclick="seleccionarTalla('L')">
+L
+</button>
+
+
+</div>
+
+
+
+<button class="agregar"
+
+onclick="agregarAlCarrito()">
+
+Agregar al carrito
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
 
 
 
 <!-- CARRITO -->
 
-<div class="carrito" id="carrito">
 
-<div class="carrito-header">
+<div id="carrito" class="carrito">
 
-<h2>Tu Carrito</h2>
 
-<button onclick="cerrarCarrito()">
+<div class="carrito-contenido">
 
-✕
 
-</button>
+<span onclick="cerrarCarrito()" class="cerrar">
 
-</div>
+×
+</span>
+
+
+
+<h2>
+
+Tu carrito
+
+</h2>
+
+
 
 <div id="listaCarrito">
 
-<p>
-
-Tu carrito está vacío.
-
-</p>
-
 </div>
 
-<div class="carrito-footer">
 
-<h3>
 
-Total:
+<h3 id="total">
 
-$
-
-<span id="totalCarrito">
-
-0
-
-</span>
+Total: $0
 
 </h3>
 
-<button class="finalizar"
 
-onclick="enviarWhatsApp()">
 
-Finalizar Pedido
+<button onclick="enviarWhatsApp()" class="comprar">
+
+Finalizar por WhatsApp
 
 </button>
 
-</div>
 
 </div>
 
 
-
-<div id="fondoCarrito"
-
-class="fondo-carrito"
-
-onclick="cerrarCarrito()">
-
 </div>
+
+
 
 
 
 <script src="script.js"></script>
+
 
 </body>
 
